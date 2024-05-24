@@ -1,0 +1,56 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #83d2fa;
+	background-image: url('https://mytowncenterdental.com/wp-content/uploads/2023/10/dentist-in-cedar-park-tx-town-center-dental-cedar-park.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+  }
+
+  .home-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px 20px;
+	background-color: #16144a; /* Green */
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	text-decoration: none;
+  }
+  .container {
+	max-width: 600px;
+	padding-top: 15%;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	background-color: #f0f8ff; /* Added matching background color */
+  }
+  .form-group {
+	margin-bottom: 15px;
+  }
+  label {
+	display: block;
+	margin-bottom: 5px;
+  }
+  input[type="text"],
+  input[type="number"],
+  select { /* Adjusted width for select elements */
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+  }
+  button {
+	background-color: #4c6aaf;
+	color: rgb(238, 248, 52);
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  button:hover {
+	background-color: #45a049;
+  }

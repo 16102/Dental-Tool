@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Eventful</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tooplate-antique-cafe.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tailwind.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/all.min1.css') }}">
+    <!-- Link to external JavaScript files -->
+    <script src="{{ url_for('static', filename='js/one.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/two.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/three.js') }}"></script>
+</head>
+<body>
+    <!-- Intro -->
+    <div id="intro" class="parallax-window" data-parallax="scroll" data-image-src="https://wp04-media.cdn.ihealthspot.com/wp-content/uploads/sites/313/2023/05/iStock-1419156177-768x512.jpg">
+        <nav id="tm-nav" class="fixed w-full">
+            <div class="tm-container mx-auto px-2 md:py-6 text-right">
+                <button class="md:hidden py-2 px-2" id="menu-toggle"><i class="fas fa-2x fa-bars tm-text-gold"></i></button>
+                <ul class="mb-3 md:mb-0 text-2xl font-normal flex justify-end flex-col md:flex-row">
+                    <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_224,h_70/https://www.sagarhospitals.in/wp-content/uploads/2019/07/sagar-hospital-best-multispeciality-hospital-in-bangalore.png" alt="Image" width="15%" style="float: left">
+                    <li class="inline-block mb-4 mx-4"><a href="#intro" class="tm-text-gold py-1 md:py-3 px-4">Intro</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#menu" class="tm-text-gold py-1 md:py-3 px-4">Menu</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#about" class="tm-text-gold py-1 md:py-3 px-4">About</a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#" class="tm-text-gold py-1 md:py-3 px-4"></a></li>
+                    <li class="inline-block mb-4 mx-4"><a href="#" class="tm-text-gold py-1 md:py-3 px-4"></a></li>
+                </ul>
+            </div>            
+        </nav>
+        
+        <div class="container mx-auto px-2 tm-intro-width">
+            <div class="sm:pb-60 sm:pt-48 py-20">
+                <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
+                    <h1 class="text-white text-5xl tm-logo-font mb-5">Dayananda Sagar College of Dental Sciences</h1>
+                    
+                </div>    
+                <div class="bg-black bg-opacity-70 p-10 mb-5">
+                    <p style="padding: 10px;" class="text-white leading-8 text-sm font-light">
+                        Discover cutting-edge orthodontic care with our advanced machine learning tool, designed to predict orthaodontal diagnostic and treatment plans for a healthier, more confident smile. </p>
+                </div>
+                              
+            </div>
+        </div>        
+    </div>
+    <!-- menu -->
+    <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="https://levika.com.ua/sites/default/files/styles/364x/public/article/023.jpg?itok=gbAUhkgf&v=1501249917">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="text-center mb-16">
+                <h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Predict Diagnosis and Treatment</h2>
+            </div>            
+           <div class="flex flex-col lg:flex-row justify-around items-center">
+            <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container" style="background-image: url('https://penndentalmedicine.org/wp-content/uploads/2019/01/shutterstock_750817375-scaled-1024x717.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                    <div class="flex items-start mb-6 tm-menu-item">
+                        <div class="ml-3 sm:ml-6">
+                            <div class="text-center mb-16">
+                                <a href="{{ url_for('diagnosis') }}" class="option-button"><h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Orthodontal Diagnosis</h2></a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+        </div>
+                
+                
+                <div class="flex flex-col lg:flex-row justify-around items-center">
+                    <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container" style="background-image: url('https://penndentalmedicine.org/wp-content/uploads/2019/01/shutterstock_750817375-scaled-1024x717.jpg'); background-size: 100% 100%; background-repeat: no-repeat;">
+                        <div class="flex items-start mb-6 tm-menu-item">
+                            <div class="ml-3 sm:ml-6">
+                                <div class="text-center mb-16">
+                                    <a href="{{ url_for('treatment') }}" class="option-button"><h2 class="bg-white tm-text-brown py-6 px-12 text-4xl font-medium inline-block rounded-md">Orthodontal Treatment</h2></a>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+            </div>
+        </div>        
+    </div>
+    <div id="about" class="parallax-window" data-parallax="scroll" data-image-src="https://w0.peakpx.com/wallpaper/776/603/HD-wallpaper-dental-tools-dentist-tools-dentistry-stomatology-dental-treatment-concepts.jpg">
+        <div class="container mx-auto tm-container py-24 sm:py-48">
+            <div class="tm-item-container sm:ml-auto sm:mr-12 mx-auto sm:px-0 px-4">
+                <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
+                    <h2 class="mb-6 tm-text-green text-4xl font-medium">About</h2>
+                    <p class="mb-6 text-base leading-8">
+                        Welcome to our innovative dental platform, where advanced machine learning technology meets exceptional patient care. Our state-of-the-art ML tool empowers dental professionals to predict accurate diagnoses and craft personalized treatment plans with unprecedented precision. By analyzing extensive patient data and historical treatment outcomes, our tool assists dentists in making informed decisions, ensuring optimal care and improved patient satisfaction. Embrace the future of dentistry with our intelligent diagnostic and treatment prediction tool, designed to elevate the standards of dental health and streamline the path to a brighter, healthier smile.
+                  </p>
+                </div>
+                <a href="#contact" >
+                    
+                </a>
+            </div>           
+        </div>        
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+        // Your JavaScript code here
+        function checkAndShowHideMenu() {
+            if(window.innerWidth < 768) {
+                $('#tm-nav ul').addClass('hidden');                
+            } else {
+                $('#tm-nav ul').removeClass('hidden');
+            }
+        }
+
+        $(function(){
+            var tmNav = $('#tm-nav');
+            tmNav.singlePageNav();
+
+            checkAndShowHideMenu();
+            window.addEventListener('resize', checkAndShowHideMenu);
+
+            $('#menu-toggle').click(function(){
+                $('#tm-nav ul').toggleClass('hidden');
+            });
+
+            $('#tm-nav ul li').click(function(){
+                if(window.innerWidth < 768) {
+                    $('#tm-nav ul').addClass('hidden');
+                }                
+            });
+
+            $(document).scroll(function() {
+                var distanceFromTop = $(document).scrollTop();
+
+                if(distanceFromTop > 100) {
+                    tmNav.addClass('scroll');
+                } else {
+                    tmNav.removeClass('scroll');
+                }
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
